@@ -37,25 +37,46 @@ $(document).ready(function () {
         dNote.play();
     });
     // Keyboard Button sound Testing
-    var sounds = {
-        67 : 'cAudio',
-        69 : 'eAudio',
-        70 : 'fAudio',
-        71 : 'gAudio',
-        65 : 'aAudio',
-        66 : 'bAudio',
-        68 : 'dAudio',
-    };
-    (document).onkeydown = function(e) {
-        var soundId = sounds[e.keyCode];
-        if('67') document.getElementById('cAudio').play();
-        if('69') document.getElementById('eAudio').play();
-        if('70') document.getElementById('fAudio').play();
-        if('71') document.getElementById('gAudio').play();
-        if('65') document.getElementById('aAudio').play();
-        if('66') document.getElementById('bAudio').play();
-        if('68') document.getElementById('dAudio').play();
-        else console.log("key not mapped : code is", e.keyCode);
+    /*var sounds = {
+        67 : eNote,
+        69 : fNote,
+        70 : fNote,
+        71 : gNote,
+        65 : aNote,
+        66 : bNote,
+        68 : dNote,
+    };*/
+    (document).onkeydown = function (e) {
+        if (e.keyCode == 67) {
+            cNote.currentTime = 0;
+            cNote.play();
+            console.log("test")
+        }
+        if (e.keyCode == 69) {
+            eNote.currentTime = 0;
+            eNote.play();
+        }
+        if (e.keycode == 70) {
+            fNote.currentTime = 0;
+            fNote.play();
+        }
+        if (e.keycode == 71) {
+            gNote.currentTime = 0;
+            gNote.play();
+        }
+        if (e.keycode == 65) {
+            aNote.currentTime = 0;
+            aNote.play();
+            console.log("test");
+        }
+        if (e.keyCode == 66) {
+            bNote.currentTime = 0;
+            bNote.play();
+        }
+        if (e.keyCode == 68) {
+            dNote.currentTime = 0;
+            dNote.play();
+        }
     };
     // -
 });
