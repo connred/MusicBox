@@ -47,27 +47,26 @@ $(document).ready(function () {
         68 : dNote,
     };*/
     (document).onkeydown = function (e) {
+        console.log(e.keyCode);
         if (e.keyCode == 67) {
             cNote.currentTime = 0;
             cNote.play();
-            console.log("test")
         }
         if (e.keyCode == 69) {
             eNote.currentTime = 0;
             eNote.play();
         }
-        if (e.keycode == 70) {
+        if (e.keyCode == 70) {
             fNote.currentTime = 0;
             fNote.play();
         }
-        if (e.keycode == 71) {
+        if (e.keyCode == 71) {
             gNote.currentTime = 0;
             gNote.play();
         }
-        if (e.keycode == 65) {
+        if (e.keyCode == 65) {
             aNote.currentTime = 0;
             aNote.play();
-            console.log("test");
         }
         if (e.keyCode == 66) {
             bNote.currentTime = 0;
