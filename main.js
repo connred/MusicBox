@@ -30,13 +30,13 @@ $(document).ready(function () {
         socket.emit('gkey')
     });
     $('#a').mouseover(function () {
-        cNote.currentTime = 0;
-        cNote.play();
+        aNote.currentTime = 0;
+        aNote.play();
         socket.emit('akey')
     });
     $('#b').mouseover(function () {
-        cNote.currentTime = 0;
-        cNote.play();
+        bNote.currentTime = 0;
+        bNote.play();
         socket.emit('bkey')
     });
     $('#d').mouseover(function () {
